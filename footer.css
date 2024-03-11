@@ -1,0 +1,296 @@
+
+/*
+    footer css
+*/
+.footer__inner {
+    border-top: 1px solid var(--color-border);
+    padding: 1rem 0 3rem;
+  }
+  @media only screen and (max-width: 767px) {
+    .footer__inner {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      padding: 2rem 0 4rem;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footer__logo {
+      padding-left: 11rem;
+    }
+  }
+  .footer__logo--text {
+    display: block;
+  }
+  .footer__logo a {
+    text-align: center;
+    color: var(--color-foreground);
+  }
+  .footer__logo a img {
+    max-width: 10rem;
+  }
+  .footer__logo a span {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+  .footer__logo.pt-10 {
+    padding-top: 1rem;
+  }
+  @media only screen and (max-width: 767px) {
+    .footer__logo.pt-10 {
+      padding-top: 0;
+    }
+  }
+  
+  .footer__logo--text__inner {
+    font-size: 1.7rem;
+  }
+  
+  .footer__logo--text__inner {
+    font-size: 1.7rem;
+    color: var(--text-link-hover-color);
+  }
+  
+  .footer__text p {
+    line-height: 1.8rem;
+    font-size: 1.6rem;
+  }
+  .footer__text p a:hover {
+    color: var(--text-link-hover-color);
+  }
+  @media only screen and (max-width: 767px) {
+    .footer__text.top {
+      order: 1;
+    }
+  }
+  
+  .footer__copyright--text {
+    display: flex;
+  }
+  .footer__copyright--text p {
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width: 767px) {
+    .footer__copyright--text {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .footer__sign--out {
+    position: relative;
+    margin-left: 12px;
+    padding-left: 12px;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    color: var(--color-foreground);
+    font-weight: 500;
+  }
+  .footer__sign--out:hover {
+    color: var(--color-foreground);
+  }
+  .footer__sign--out::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 13px;
+    background: var(--color-background-3);
+    left: 0;
+    top: 50%;
+    transform: translatey(-50%);
+  }
+  @media only screen and (max-width: 767px) {
+    .footer__sign--out {
+      margin-left: 0;
+      padding-left: 0;
+      order: 1;
+    }
+    .footer__sign--out::before {
+      display: none;
+    }
+  }
+  
+
+
+/* website footer */
+  .website__footer--inner{
+    padding: 4rem 0 7rem;
+  }
+  @media only screen and (max-width: 767px) {
+    .website__footer--inner{
+      padding: 3rem 0 4rem;
+    }
+  }
+
+
+.footer_bg_img_style {
+  background: url(https://infotopiahub.ams3.digitaloceanspaces.com/Other_Web_3.svg);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  height: 200px;
+}
+
+.footer_link_menu{
+  position: relative;
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+}
+@media only screen and (min-width: 768px) {
+  .footer_link_menu{
+      padding-left: 3rem;
+  }
+}
+.footer_link_menu::before{
+  position: absolute;
+    content: "";
+    width: 510px;
+    height: 1px;
+    background: var(--color-border);
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+}
+@media only screen and (max-width: 767px) {
+  .footer_link_menu {
+    flex-direction: column;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer_link_menu:before {
+    width: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer_link_menu::before {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .footer_nav_menu nav ul {
+    flex-direction: column;
+  }
+}
+.footer_nav_menu nav ul li {
+  margin-left: 40px;
+}
+.footer_nav_menu nav ul li:last-child {
+  margin-right: 0;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer_nav_menu nav ul li {
+    margin-left: 35px;
+  }
+  .footer_nav_menu nav ul li:first-child {
+    margin-left: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer_nav_menu nav ul li {
+    margin-left: 20px;
+  }
+  .footer_nav_menu nav ul li:first-child {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer_nav_menu nav ul li {
+    margin-left: 0;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+.footer_nav_menu nav ul li a {
+  color: var(--color-foreground);
+  text-transform: capitalize;
+}
+.footer_nav_menu nav ul li a:hover {
+  color: var(--text-link-hover-color)
+}
+@media only screen and (max-width: 767px) {
+  .footer_nav_menu.left nav ul {
+    text-align: right;
+  }
+}
+.footer_nav_menu.left nav ul li:first-child {
+  margin-left: 0;
+}
+.footer_nav_menu.right nav ul li:first-child {
+  margin-left: 0;
+}
+@media only screen and (max-width: 767px) {
+  .footer_nav_menu.right nav ul li:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.website_footer-logo {
+  padding: 0 45px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .website_footer-logo {
+    padding: 0 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .website_footer-logo {
+    padding: 0;
+    order: -1;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    position: relative;
+  }
+  .website_footer-logo::before{
+    position: absolute;
+    content: "";
+    width: 150px;
+    height: 1px;
+    background: var(--color-border);
+    bottom: 0;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+.website_footer-logo a {
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+.website_footer-logo a span {
+  margin-left: 0;
+  color: var(--color-foreground);
+  text-transform: capitalize;
+}
+
+.website_footer-logo a span.inner {
+  margin-top: 0.5rem;
+  color: var(--text-link-hover-color);
+  display: block;
+}
+@media only screen and (max-width: 767px) {
+  .website_footer-logo a span.inner {
+    margin-top: 0;
+    display: inline-block;
+  }
+}
+
+.copyright__text{
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  color: var(--color-foreground);
+}
+.footer__join--text{
+  font-size: 1.5rem;
+  line-height: 1.7rem;
+  color: var(--color-foreground);
+  margin-bottom: 1.5rem;
+}
+.footer__join--text a{
+  color: var(--color-foreground);
+}

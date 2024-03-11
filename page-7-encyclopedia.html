@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Infotopia - HTML Template</title>
+    <meta name="description" content="Morden Bootstrap HTML5 Template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ======= All CSS Plugins here ======== -->
+    <link rel="stylesheet" href="../assets/css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/mmenu.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/nice-select2.css" />
+    <link rel="stylesheet" href="../assets/css/ionicons.min.css" />
+    <link rel="stylesheet" href="../assets/css/vendor/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Custom Style CSS -->
+    <link rel="stylesheet" href="../assets/css/base.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+    <link rel="stylesheet" href="../assets/css/user.css" />
+    <link rel="stylesheet" href="../assets/css/website.css" />
+    <link rel="stylesheet" href="../assets/css/website-library.css" />
+    <link rel="stylesheet" href="../assets/css/categories.css" />
+    <link rel="stylesheet" href="../assets/css/dictionary.css" />
+    <link rel="stylesheet" href="../assets/css/listnav.css" />
+    <link rel="stylesheet" href="../assets/css/modal.css" />
+    <link rel="stylesheet" href="../assets/css/darkcsscolor.css" />
+    
+    <!-- Modernizr JS -->
+    <script src="../assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
+    <script>
+      // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+      if (localStorage.getItem("theme-color") === "dark" || (!("theme-color" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      } 
+      if (localStorage.getItem("theme-color") === "light") {
+        document.documentElement.classList.remove("dark");
+      } 
+    </script>
+
+
+  </head>
+
+  <body>
+
+  <!-- mobile website menu -->
+  <nav class="panel-menu navbar_mobile_menu color-accent-3">
+    <div class="mm-navbtn-names">
+      <div class="mm-closebtn">MAIN MENU <i class="ion-android-close"></i></div>
+      <div class="mm-backbtn"> <span><svg xmlns="http://www.w3.org/2000/svg" width="9.512" height="18.668" viewBox="0 0 9.512 18.668">
+        <path id="Vector" d="M7.1,15.84.577,9.32a1.986,1.986,0,0,1,0-2.8L7.1,0" transform="translate(1 1.414)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </svg>
+      BACK </span> <i class="ion-android-close"></i></div>
+    </div>
+    <ul>
+      <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Home.svg" alt="img">
+       Home</a>
+      </li>
+      <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Encyclopedia.svg" alt="img">          
+      Encyclopedia</a>
+      </li>
+      <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Study_Area.svg" alt="img">         
+      Study Area</a>
+      <ul>
+        <li>
+          <a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Articles.svg" alt="img">  Articles</a>
+          <ul>
+            <li><a href="#">Vision</a></li>
+            <li><a href="#">Leadership</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Innovation</a></li>
+            <li><a href="#">System</a></li>
+            <li><a href="#">Strategy</a></li>
+            <li><a href="#">Power</a></li>
+            <li><a href="#"><u>Browse All Fields</u></a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Case_Studies.svg" alt="img"> Case Studies</a>
+          <ul>
+            <li><a href="#">Entrepreneurs</a></li>
+            <li><a href="#">Organisations</a></li>
+            <li><a href="#"><u>Browse All Fields</u></a></li>
+          </ul>
+        </li>
+      </ul>
+      </li>
+      <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Library.svg" alt="img">
+      Library</a>
+      </li>
+      <li><a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Educators.svg" alt="img">          
+      Educators</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- mobile website menu .\ -->
+
+  <!-- Cms article start -->
+  <nav class="panel-menu cms_articles_mobile_menu color-accent-3">
+    <div class="mm-navbtn-names">
+      <div class="mm-closebtn">SIDE MENU <i class="ion-android-close"></i></div>
+      <div class="mm-backbtn"> <span><svg xmlns="http://www.w3.org/2000/svg" width="9.512" height="18.668" viewBox="0 0 9.512 18.668">
+        <path id="Vector" d="M7.1,15.84.577,9.32a1.986,1.986,0,0,1,0-2.8L7.1,0" transform="translate(1 1.414)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </svg>
+      BACK </span> <i class="ion-android-close"></i></div>
+    </div>
+    <ul>
+      <li>
+        <a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Language.svg" alt="icon"> Language</a>
+        <ul>
+          <li><a href="#">English</a></li>
+          <li><a href="#">Spanish</a></li>
+        </ul>
+      </li>
+      <li>
+        <button class="light__to--dark">
+          <img class="articles_mobile_menu_icon_img dark--mode__icon" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Dark_Mode.svg" alt="icon"> 
+          <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
+            <g id="vuesax_linear_moon" data-name="vuesax/linear/moon" transform="translate(-108 -188)">
+              <g id="moon" transform="translate(108 188)">
+                <path id="Vector" d="M0,0H30V30H0Z" transform="translate(30.002 30.002) rotate(180)" fill="none" opacity="0"/>
+                <g id="sun-03" transform="translate(1.346 1.346)">
+                  <path id="Path_9179" data-name="Path 9179" d="M18.655,12.828A5.828,5.828,0,1,1,12.828,7,5.828,5.828,0,0,1,18.655,12.828Z" transform="translate(0.828 0.828)" fill="none" stroke="#bebebe" stroke-width="1.5"/>
+                  <path id="Path_9180" data-name="Path 9180" d="M13.655,2V3.748m0,19.814v1.748M21.9,21.9,20.66,20.661M6.65,6.65,5.413,5.413m19.9,8.242H23.562m-19.814,0H2M21.9,5.413,20.661,6.65M6.65,20.661,5.414,21.9" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-width="1.5"/>
+                </g>
+              </g>
+            </g>
+          </svg> 
+          Dark Mode
+        </button>
+      </li>
+      <li>
+        <a href="#"><img class="articles_mobile_menu_icon_img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Settings.svg" alt="icon"> Accessibility</a>
+      </li>
+      <li>
+        <button class="zoom__in"><img class="articles_mobile_menu_icon_img zoom" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Zoom_In.svg" alt="icon">  Zoom In</button>
+      </li>
+      <li>
+        <button class="zoom__out"><svg class="articles_mobile_menu_icon_img" xmlns="http://www.w3.org/2000/svg" width="30" height="1.5" viewBox="0 0 14 1.5">
+          <path id="Vector" d="M0,0H12.5" transform="translate(0.75 0.75)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+        </svg>  Zoom Out</button>
+      </li>
+    </ul>
+  </nav>
+  <!-- Cms article end -->
+
+  <!-- Start page wrapper -->
+  <div class="page__wrapper">
+    <!-- header area start -->
+    <header class="website__header--section z-index-99 position-relative">
+      <div class="container-fluid p-0">
+        <div class="header__inner--style2 header__sticky d-flex justify-content-between align-items-center">
+            <div class="website__main--logo  ">
+              <a class="d-flex align-items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+                  <defs>
+                    <pattern id="pattern" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" viewBox="0 0 300 300">
+                      <image width="300" height="300" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAFU2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjMwMCIKICAgZXhpZjpQaXhlbFlEaW1lbnNpb249IjMwMCIKICAgZXhpZjpDb2xvclNwYWNlPSIxIgogICB0aWZmOkltYWdlV2lkdGg9IjMwMCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iMzAwIgogICB0aWZmOlJlc29sdXRpb25Vbml0PSIyIgogICB0aWZmOlhSZXNvbHV0aW9uPSIzMDAvMSIKICAgdGlmZjpZUmVzb2x1dGlvbj0iMzAwLzEiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQ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"/>
+                    </pattern>
+                  </defs>
+                  <rect id="LOGO3" width="50" height="50" fill="url(#pattern)"/>
+                </svg>                               
+                <span class="website__main--logo__text"
+                  >Infotopia<span class="website__main--logo__text--inner">Hub</span></span>
+              </a>
+            </div>
+            <div class="main__menu laptop_device_none">
+              <nav>
+                <ul class="d-flex">
+                  <li><a href="#">Home </a></li>
+                  <li><a href="#">Encyclopedia</a> </li>
+                  <li><a class="active" href="#" data-bs-toggle="modal" data-bs-target="#modalStudyArea">Study Area </a>
+                  </li>
+                  <li><a href="#">Library </a></li>
+                  <li><a href="#">Educators </a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__website--account__style2 laptop_device_none">
+                <ul class="d-flex align-items-center">
+                  <li><a href="#">Login</a></li>
+                  <li><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
+            <div class="main__header--right laptop_device_block d-flex align-items-center">
+              <div class="header__account laptop_v_block d-flex">
+                <a class="header__account--icon cms_article-icon " href="#">
+                  <img src="https://firstclass.ams3.digitaloceanspaces.com/Icon_Sub_Menu.svg" alt="icon">
+                </a>
+                <a class="mobile__menu--open__btn" href="#"><img src="https://firstclass.ams3.digitaloceanspaces.com/Icon_Menu.svg" alt="img"></a>
+              </div>
+              <div class="header__profile style2 position-relative">
+                <a class="header__sign--up__icon" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                    <g id="vuesax_linear_login" data-name="vuesax/linear/login" transform="translate(-684 -444)">
+                      <g id="login" transform="translate(684 444)">
+                        <path id="Vector" d="M0,6.337C.387,1.837,2.7,0,7.762,0h.163c5.587,0,7.825,2.238,7.825,7.825v8.15c0,5.587-2.238,7.825-7.825,7.825H7.762c-5.025,0-7.337-1.813-7.75-6.237" transform="translate(11.125 3.112)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        <path id="Vector-2" data-name="Vector" d="M0,0H16.1" transform="translate(2.5 15)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        <path id="Vector-3" data-name="Vector" d="M0,0,4.188,4.188,0,8.375" transform="translate(15.813 10.812)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                        <path id="Vector-4" data-name="Vector" d="M0,0H30V30H0Z" transform="translate(30 30) rotate(180)" fill="none" opacity="0"/>
+                      </g>
+                    </g>
+                  </svg>                      
+                </a>
+              </div>
+            </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area end -->
+
+    <!-- Start Main content -->
+    <div class="main__content">
+       <!-- hero section start -->
+       <section class="encyclopedia__hero--section  mb-100">
+        <div class="container">
+            <div class="encyclopedia__hero--section__inner position-relative">
+                <div class="encyclopedia__hero--content text-center">
+                    <h1>Encyclopedia</h1>
+                    <div class="articles_search-box">
+                      <input class="input__field" placeholder="Search by Name" type="text">
+                      <button type="submit">
+                          <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Search.svg" alt="img">                                 
+                      </button>
+                    </div>
+                </div>
+                <div class="hero_position_style5_img">
+                    <img src="../assets/img/other/hero-encyclopedia.png" alt="img">
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- hero section end -->
+
+      <!-- library section satrt -->
+      <section class="library__section section__border position-relative" id="main-content">
+        <div class="website__sidebar--account library__sidebar--account shadow-hover-color" id="website-info-sidebar">
+          <ul class="website-info-sidebar-inner">
+            <li>
+              <button>
+                  <img class="light-img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_English.svg" alt="icon">
+                  <svg class="dark-img" xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22">
+                    <text id="EN" transform="translate(13 18)" fill="#bebebe" font-size="19" font-family="MavenPro-Regular, Maven Pro" letter-spacing="0.01em"><tspan x="-12.473" y="0">EN</tspan></text>
+                  </svg>
+              </button>
+            </li>
+            <li>
+              <button class="light__dark--btn light__to--dark" id="light__to--dark">
+                 <img class="dark--mode__icon" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Dark_Mode.svg" alt="icon"> 
+                  <svg class="light--mode__icon" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
+                    <g id="vuesax_linear_moon" data-name="vuesax/linear/moon" transform="translate(-108 -188)">
+                      <g id="moon" transform="translate(108 188)">
+                        <path id="Vector" d="M0,0H30V30H0Z" transform="translate(30.002 30.002) rotate(180)" fill="none" opacity="0"/>
+                        <g id="sun-03" transform="translate(1.346 1.346)">
+                          <path id="Path_9179" data-name="Path 9179" d="M18.655,12.828A5.828,5.828,0,1,1,12.828,7,5.828,5.828,0,0,1,18.655,12.828Z" transform="translate(0.828 0.828)" fill="none" stroke="#bebebe" stroke-width="1.5"/>
+                          <path id="Path_9180" data-name="Path 9180" d="M13.655,2V3.748m0,19.814v1.748M21.9,21.9,20.66,20.661M6.65,6.65,5.413,5.413m19.9,8.242H23.562m-19.814,0H2M21.9,5.413,20.661,6.65M6.65,20.661,5.414,21.9" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-width="1.5"/>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>                                                    
+              </button>
+            </li>
+            <li class="mb-30">
+              <button>
+                <img class="light-img" src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Settings.svg" alt="icon">
+                <svg class="dark-img" xmlns="http://www.w3.org/2000/svg" width="30.002" height="30.002" viewBox="0 0 30.002 30.002">
+                  <g id="vuesax_linear_setting-4" data-name="vuesax/linear/setting-4" transform="translate(-428 -188)">
+                    <g id="setting-4" transform="translate(428 188)">
+                      <path id="Vector" d="M7.5,0H0" transform="translate(20.001 8.126)" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <path id="Vector-2" data-name="Vector" d="M5,0H0" transform="translate(2.5 8.126)" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <path id="Vector-3" data-name="Vector" d="M8.751,4.375A4.375,4.375,0,1,1,4.375,0,4.375,4.375,0,0,1,8.751,4.375Z" transform="translate(8.126 3.75)" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <path id="Vector-4" data-name="Vector" d="M5,0H0" transform="translate(22.501 21.876)" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <path id="Vector-5" data-name="Vector" d="M7.5,0H0" transform="translate(2.5 21.876)" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <path id="Vector-6" data-name="Vector" d="M8.751,4.375A4.375,4.375,0,1,1,4.375,0,4.375,4.375,0,0,1,8.751,4.375Z" transform="translate(13.126 17.501)" fill="none" stroke="#bebebe" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                      <path id="Vector-7" data-name="Vector" d="M0,0H30V30H0Z" fill="none" opacity="0"/>
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </li>
+            <li class="mb-30">
+              <button class="zoom__btn--field zoom__in">
+                <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Zoom_In.svg" alt="img">                      
+              </button>
+            </li>
+            <li>
+              <button class="zoom__btn--field zoom__out">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="1.5" viewBox="0 0 14 1.5">
+                  <path id="Vector" d="M0,0H12.5" transform="translate(0.75 0.75)" fill="none" stroke="#464646" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+                </svg>                                            
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="container">
+          <div class="page_dictionary_section section_p-m section__border ">
+            <div class="dictionary_style_inner style__2  demoTwo demo" id="accordionExample">
+                <div class="dictionary__mobile--select mobile_v_block mb-40">
+                    <select class="select_option">
+                        <option selected value="1">All (000) </option>
+                        <option value="2">A </option>
+                        <option value="3">B </option>
+                        <option value="4"> C </option>
+                        <option value="5">  D </option>
+                        <option value="6"> F </option>
+                        <option value="7"> G </option>
+                        <option value="8"> H </option>
+                        <option value="9"> I </option>
+                        <option value="10"> J </option>
+                        <option value="11"> K </option>
+                    </select>
+                </div>
+                <div class="frequently_steap_list one">
+                    <h2 class="frequently__questions accordion-header" id="headingOne">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <span>Economies of Scale</span>
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="frequently__desc accordion-body">
+                          <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+
+                          <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                    <h2 class="frequently__questions accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <span>Bulk Purchasing</span>
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="frequently__desc accordion-body">
+                        <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                        <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span> Internationalisation</span>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <span>Cross-Cultural Analysis</span>
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <span>Benchmarking</span>
+                        </button>
+                      </h2>
+                      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <span> Rituals</span>
+                        </button>
+                      </h2>
+                      <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <span>Jargon</span>
+                        </button>
+                      </h2>
+                      <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            <span>Culture Shock</span>
+                        </button>
+                      </h2>
+                      <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingnine">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
+                            <span>Driving Company</span>
+                        </button>
+                      </h2>
+                      <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingnine" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="headingten">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
+                            <span> Driven Company</span>
+                        </button>
+                      </h2>
+                      <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingten" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="heading11">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            <span>Rituals</span>
+                        </button>
+                      </h2>
+                      <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="heading12">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            <span>Jargon</span>
+                        </button>
+                      </h2>
+                      <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="heading13">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                            <span>Culture Shock</span>
+                        </button>
+                      </h2>
+                      <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="heading14">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                            <span>Driving Company</span>
+                        </button>
+                      </h2>
+                      <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="frequently_steap_list">
+                      <h2 class="frequently__questions accordion-header" id="heading15">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                            <span>Driven Company</span>
+                        </button>
+                      </h2>
+                      <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15" data-bs-parent="#accordionExample">
+                          <div class="frequently__desc accordion-body">
+                            <p>An approach to select the best version of a product by showing two or more versions to a target audience and then check their responses. This approach is normally used to test website features and digital adverts.  </p>
+                            <p class="frequently__desc color-green">Example: An organisation publishes two commercial adverts on its website with the same message but in a different design to check which one is mostly clicked by the customers. The one with the highest clicks would be selected.</p>
+                          </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="pagination_area">
+              <ul class="pagination_wrapper color-accent-3 shadow-hover-color d-flex justify-content-center align-items-center">
+                  <li>
+                      <div class="pagination_link-side draggable">
+                          <a class="pagination_link " href="#">
+                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Left_4.svg" alt="icon">                                        
+                          </a>
+                          <a class="pagination_link " href="#">
+                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Left_3.svg" alt="icon">                                                                                   
+                          </a>
+                      </div>
+                  </li>
+                  <li><a class="pagination_link style" href="#">01</a></li>
+                  <li><span class="pagination_link style active">02</span> </li>
+                  <li><a class="pagination_link style" href="#">03</a></li>
+                  <li>
+                      <div class="pagination_link-side">
+                          <a class="pagination_link " href="#">
+                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Right_3.svg" alt="icon">                                                                                 
+                          </a>
+                          <a class="pagination_link " href="#">
+                              <img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Arrow_Right_4.svg" alt="icon">                                                                                                                           
+                          </a>
+                      </div>
+                  </li>
+              </ul>
+              <div class="categories__pagination--mobile">
+                <ul
+                  class="pagination__mobile--wrapper d-flex justify-content-center align-items-center"
+                >
+                  <li>
+                    <a class="pagination__page--text prev" href="#">Prev</a>
+                  </li>
+                  <li class="categories__pagination--number d-flex align-items-center">
+                      <input class="pagination__type--input" placeholder="1" type="text">
+                      <span>of 3</span>
+                    </li>
+                  <li>
+                    <a class="pagination__page--text next" href="#">Next</a>
+                  </li>
+                </ul>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </section>
+      <!-- library section satrt .\ -->
+
+    <!-- Newsletter section -->
+    <section class="newsletter__section pb-50">
+      <div class="container">
+        <div
+          class="newsletter__inner d-flex justify-content-between align-items-center"
+        >
+          <div class="newsletter__text">
+            <h4>Weekly Newsletter</h4>
+            <p>
+              Register for our weekly content digest and stay informed with the
+              latest knowledge!
+            </p>
+          </div>
+          <button class="register_btn outline__button outline--button">Register</button>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter section .\ -->
+
+    </div>
+    <!-- Start Main content .\ -->
+  </div>
+  <!-- Start page wrapper .\ -->
+  
+  <!-- Start footer section -->
+  <footer class="footer_section">
+    <div class="footer_bg_img_style">
+
+    </div>
+    <div class="website__footer--inner">
+      <div class="container">
+        <div
+          class="footer_link_menu d-flex align-items-center justify-content-center"
+        >
+          <div class="footer_nav_menu left color-accent-3">
+            <nav>
+              <ul class="d-flex">
+                <li><a href="#">Partnership</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="nav_logo website_footer-logo">
+            <a class="d-flex" href="#">
+              <img src="../assets/img/other/footer-logo.png" alt="img" />
+              <span>Infotopia  <span class="inner">Hub</span></span></span>
+            </a>
+          </div>
+          <div class="footer_nav_menu right color-accent-3">
+            <nav>
+              <ul class="d-flex">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer_bottom text-center">
+            <p class="copyright__text color-accent-8">Copyright © 2023. All rights reserved.</p>
+            <p class="footer__join--text">Join us on <a class="color-accent-1" href="#">Facebook</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer section -->
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="modalStudyArea" tabindex="-1">
+    <div class="modal-dialog modal__study--area__dialog modal-dialog-centered">
+      <div class="modal-content style">
+        <div class="modal_header">
+          <button
+            type="button"
+            class=" modal__close--btn"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14.711"
+              height="14.711"
+              viewBox="0 0 12.711 12.711"
+            >
+              <g
+                id="Group_7205"
+                data-name="Group 7205"
+                transform="translate(-113.644 -321.644)"
+              >
+                <path
+                  id="Vector"
+                  d="M0,9.883,9.883,0"
+                  transform="translate(115.059 323.059)"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+                <path
+                  id="Vector-2"
+                  data-name="Vector"
+                  d="M9.883,9.883,0,0"
+                  transform="translate(115.059 323.059)"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                />
+              </g>
+            </svg> 
+          </button>
+        </div>
+        <div class="modal-body modal-shadow-color">
+          <div class="modal_content">
+            <h2 class="modal__mega--menu__title mb-40">Study Area</h2>
+            <div class="modal__mega--menu__wrapper d-flex">
+              <ul class="modal__nav--mega__menu  nav" role="tablist">
+                <li class="nav-item"><a class="active" id="home-tab" data-bs-toggle="tab" href="#articles" role="tab" aria-controls="articles" aria-selected="true"><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Articles.svg" alt="icon"> Articles <svg xmlns="http://www.w3.org/2000/svg" width="7.457" height="11.455" viewBox="0 0 7.457 11.455">
+                  <g id="Group_7934" data-name="Group 7934" transform="translate(-384.891 885.131) rotate(-90)">
+                    <line id="Line_1136" data-name="Line 1136" x2="4.52" y2="4.28" transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="1.5"/>
+                    <line id="Line_1137" data-name="Line 1137" y1="4.28" x2="4.52" transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="1.5"/>
+                  </g>
+                </svg>
+                </a></li>
+                <li class="nav-item"><a data-bs-toggle="tab" href="#casestudies" role="tab" aria-controls="casestudies" aria-selected="false"><img src="https://infotopiahub.ams3.digitaloceanspaces.com/Icon_Case_Studies.svg" alt="icon"> Case Studies <svg xmlns="http://www.w3.org/2000/svg" width="7.457" height="11.455" viewBox="0 0 7.457 11.455">
+                  <g id="Group_7934" data-name="Group 7934" transform="translate(-384.891 885.131) rotate(-90)">
+                    <line id="Line_1136" data-name="Line 1136" x2="4.52" y2="4.28" transform="matrix(0.985, 0.174, -0.174, 0.985, 875.646, 386.119)" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="1.5"/>
+                    <line id="Line_1137" data-name="Line 1137" y1="4.28" x2="4.52" transform="matrix(0.985, -0.174, 0.174, 0.985, 878.708, 386.904)" fill="none" stroke="#464646" stroke-linecap="round" stroke-width="1.5"/>
+                  </g>
+                </svg>
+                </a></li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="articles" role="tabpanel">
+                      <div class="modal__mega--menu__content d-flex">
+                          <ul>
+                            <li><a href="#">Vision</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Power</a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">System</a></li>
+                            <li><a href="#"><u>Browse All Fields</u></a></li>
+                          </ul>
+                          <ul>
+                            <li><a href="#">Culture</a></li>
+                            <li><a href="#">Strategy</a></li>
+                          </ul>
+                      </div>
+                </div>
+                <div class="tab-pane fade" id="casestudies" role="tabpanel">
+                  <div class="modal__mega--menu__content d-flex">
+                    <ul>
+                      <li><a href="#">Entrepreneurs</a></li>
+                      <li><a href="#"><u>Browse All Fields</u></a></li>
+                    </ul>
+                    <ul>
+                      <li><a href="#">Organisations</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+    <!-- All Script JS Plugins here  -->
+    <script src="../assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/vendor/popper.min.js"></script>
+    <script src="../assets/js/vendor/bootstrap.min.js"></script>
+    <script src="../assets/js/mmenu.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/slick.min.js"></script>
+    <script src="../assets/js/nice-select2.js"></script>
+    <script src="../assets/js/jquery-listnav.js"></script>
+
+    <script>
+      $(function(){
+          $('.demoTwo').listnav({
+              noMatchText: 'There are no matching entries.'
+          });
+          $('.demo a').click(function(e) {
+              e.preventDefault();
+          });
+      });
+      </script>
+
+
+    <!-- Customscript js -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- SIdebar sticky -->
+    <script type="text/javascript" src="../assets/js/jquery.sticky-sidebar.min.js"></script>
+    <script type="text/javascript">
+        var sidebar = new StickySidebar('#website-info-sidebar', {
+            containerSelector: '#main-content',
+            innerWrapperSelector: '.website-info-sidebar-inner',
+            topSpacing: 100,
+            bottomSpacing: 100
+        });
+    </script>
+
+    
+  </body>
+</html>

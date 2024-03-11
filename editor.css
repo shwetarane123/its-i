@@ -1,0 +1,370 @@
+/* Editor css */
+
+/* Set default font-family */
+#container,
+.ql-container {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 1.6rem;
+}
+
+/* Set dropdown font-families */
+.ql-font span[data-value="maven"]::before,
+.ql-font span[data-label="maven"]::before {
+  font-family: "Maven Pro", sans-serif;
+}
+
+.ql-font span[data-value="oswald"]::before,
+.ql-font span[data-label="oswald"]::before {
+  font-family: "Oswald", sans-serif;
+}
+
+.ql-font-maven {
+  font-family: "Maven Pro", sans-serif;
+}
+
+.ql-font-oswald {
+  font-family: "Oswald", sans-serif;
+}
+
+/* Font Size */
+.ql-snow .ql-editor h1 {
+  font-size: 2.5rem;
+}
+
+.ql-snow .ql-editor h2 {
+  font-size: 2rem;
+}
+
+.ql-snow .ql-editor h3 {
+  font-size: 1.8rem;
+}
+
+.ql-snow .ql-editor h4 {
+  font-size: 1.4rem;
+}
+
+.ql-snow .ql-editor h5 {
+  font-size: 1.2rem;
+}
+
+.ql-snow .ql-editor h6 {
+  font-size: 1rem;
+}
+
+.ql-snow .ql-picker.ql-header .ql-picker-item::before {
+  font-size: 1.6rem !important;
+}
+
+.ql-snow .ql-picker-label {
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.ql-editor.ql-blank::before {
+  color: var(--color-border);
+  font-style: normal;
+  left: 16px;
+  right: 15px;
+}
+
+.editor__textarea--box .ql-formats button {
+  margin-right: 1.5rem;
+}
+
+.editor__textarea--box .ql-formats button:last-child {
+  margin-right: 0;
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow {
+  border: 0;
+  gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow .ql-formats {
+  margin-right: 0;
+}
+
+.editor__textarea--box .ql-formats button {
+  width: 4rem;
+  height: 4rem;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  float: inherit;
+  border-radius: 1rem;
+}
+
+.editor__textarea--box .ql-formats button:hover {
+  border-color: #74c3b3;
+  -webkit-box-shadow: 0 0 10px rgba(116, 195, 179, 0.15);
+          box-shadow: 0 0 10px rgba(116, 195, 179, 0.15);
+}
+
+.editor__textarea--box .ql-formats button.ql-active {
+  background: #e2f2ef;
+  border: 1px solid transparent;
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  color: #74c3b3;
+}
+
+.editor__textarea--box .ql-formats button svg {
+  width: 2rem;
+  margin: 0 auto;
+  float: inherit;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.editor__textarea--box .ql-font.ql-picker {
+  width: 24rem;
+  height: 4rem;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  float: inherit;
+  border-radius: 1rem;
+  text-align: left;
+  line-height: 3.8rem;
+  font-size: 1.6rem;
+}
+
+.editor__textarea--box .ql-header.ql-picker {
+  width: 15rem;
+  height: 4rem;
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  float: inherit;
+  border-radius: 1rem;
+  text-align: left;
+  line-height: 3.8rem;
+  font-size: 1.6rem;
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  color:var(--color-background);
+}
+
+.editor__textarea--box .ql-container.ql-snow {
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  height: 15rem;
+  overflow: auto;
+  resize: vertical;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.editor__textarea--box .ql-container.ql-snow:hover {
+  border-color: var(--border-hover-color);
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border-top: 1px solid var(--color-border);
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow + .ql-container.ql-snow:hover {
+  border-color: var(--border-hover-color);
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label {
+  border: none;
+  padding: 0 3.3rem 0 1.2rem;
+}
+
+.editor__textarea--box .ql-snow .ql-picker-label {
+  padding: 0 3.3rem 0 1.2rem;
+  border: none;
+}
+
+.editor__textarea--box .ql-snow .ql-picker-options .ql-picker-item {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.editor__textarea--box .ql-snow .ql-picker:not(.ql-color-picker):not(.ql-icon-picker) svg {
+  display: none;
+}
+
+.editor__textarea--box .ql-picker-label::after {
+  position: absolute;
+  content: "";
+  border-bottom: 2px solid var(--color-border);
+  border-right: 2px solid var(--color-border);
+  width: 9px;
+  height: 9px;
+  right: 15px;
+  top: 38%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: 66% 66%;
+          transform-origin: 66% 66%;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow .ql-picker-options {
+  -webkit-box-shadow: inherit;
+          box-shadow: inherit;
+  border: 1px solid var(--color-border);
+  padding: 1rem;
+  border-radius: 0 0 1rem 1rem;
+  border-top: 0;
+}
+
+.editor__textarea--box .ql-snow .ql-picker.ql-expanded .ql-picker-options {
+  display: block;
+  margin-top: 0;
+  top: 102%;
+}
+
+.ql-formats.slect__formats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ql-snow.ql-toolbar button:hover .ql-stroke {
+  stroke: var(--text-link-hover-color);
+}
+
+.ql-snow.ql-toolbar button.ql-active .ql-stroke {
+  stroke: var(--text-link-hover-color);
+}
+
+.ql-snow.ql-toolbar .ql-picker-item.ql-selected {
+  color: var(--text-link-hover-color);
+}
+
+.ql-snow.ql-toolbar .ql-picker-item:hover {
+  color: var(--text-link-hover-color);
+}
+
+.ql-snow.ql-toolbar .ql-picker-label:hover {
+  color: var(--color-foreground);
+}
+
+.ql-snow.ql-toolbar .ql-picker-label.ql-active {
+  color: var(--color-foreground);
+}
+
+.ql-snow.ql-toolbar .ql-picker-label,
+.ql-snow.ql-toolbar .ql-picker-item {
+  font-family: "Maven Pro", sans-serif;
+  font-weight: 400;
+}
+
+.editor-container p {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: var(--color-foreground-3);
+}
+
+.ql-editor p {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  color: var(--color-foreground-3);
+}
+
+.ql-editor.ql-blank p {
+  color: var(--color-foreground-3);
+}
+
+
+.editor__textarea--box .ql-toolbar.ql-snow .ql-formats button > svg {
+  display: none;
+}
+
+.editor__textarea--box .ql-toolbar.ql-snow .ql-formats button {
+  background-repeat: no-repeat;
+  text-align: center;
+  background-position: center center;
+}
+
+.editor__textarea--box .ql-formats button.ql-align > svg {
+  display: none;
+}
+
+.editor__textarea--box .ql-formats button.ql-align {
+  text-align: center;
+}
+
+.editor__textarea--box .ql-formats button.ql-bold {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Bold_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-bold.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Bold_On.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-italic {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Italics_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-italic.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Italics_On.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-underline {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Underline_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-underline.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Underline_On.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-left {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Left_Align_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-left.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Left_Align_On.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-center {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Center_Align_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-center.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Center_Align_On.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-right {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Right_Align_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-right.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Right_Align_On.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-justify {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Justify_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-button-justify.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Justify_On.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-list {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Bullets_Off.svg") !important;
+}
+
+.editor__textarea--box .ql-formats button.ql-list.ql-active {
+  background-image: url("https://firstclass.ams3.digitaloceanspaces.com/Icon_Bullets_On.svg") !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .notify__button--header.mb-30{
+    margin-bottom: 2rem;
+  }
+}
